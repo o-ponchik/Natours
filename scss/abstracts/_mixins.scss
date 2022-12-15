@@ -1,0 +1,15 @@
+@mixin clesrfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin grid-column($columns, $span) {
+  width: calc(
+    (
+        #{$span} * (#{$gutter-horizontal} + #{100%}) - #{$columns} * #{$gutter-horizontal}
+      ) / #{$columns}
+  );
+}
