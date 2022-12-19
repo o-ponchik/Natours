@@ -54,7 +54,7 @@ body {
 
   &:hover {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
-    text-shadow: 0.5em 1rem 2rem rgba($color-black, $alpha: 0.2);
+    text-shadow: 0.5em 1rem 2rem $shadow-2;
   }
 }
 
