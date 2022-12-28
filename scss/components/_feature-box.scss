@@ -21,6 +21,10 @@
 
     -webkit-background-clip: text;
     color: transparent;
+
+    @include respond(tab-port) {
+      margin-bottom: 0rem;
+    }
   }
 
   &:hover {
