@@ -396,6 +396,7 @@ body {
 .feature--box:hover {
   transform: translateY(-1.5rem) scale(1.03);
 }
+
 .card {
   perspective: 150rem;
   -moz-perspective: 150rem;
