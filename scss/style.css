@@ -785,15 +785,30 @@ body {
   transform: translate(-50%, -50%) scale(0);
   transition: all 0.4s 0.2s;
 }
+@media (max-width: 37.5em) {
+  .popup__content {
+    width: 90%;
+  }
+}
 .popup__left {
   width: 33.3%;
   display: table-cell;
+}
+@media (max-width: 56.25em) {
+  .popup__left {
+    display: none;
+  }
 }
 .popup__right {
   width: 66.6%;
   display: table-cell;
   vertical-align: middle;
   padding: 3rem 5rem;
+}
+@media (max-width: 37.5em) {
+  .popup__right {
+    text-align: center;
+  }
 }
 .popup__img {
   display: block;
@@ -811,6 +826,12 @@ body {
   -ms-hyphens: auto;
   -webkit-hyphens: auto;
   hyphens: auto;
+}
+@media (max-width: 37.5em) {
+  .popup__text {
+    -moz-column-count: 1;
+         column-count: 1;
+  }
 }
 .popup__close:link, .popup__close:visited {
   color: #777;
