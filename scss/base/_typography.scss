@@ -47,14 +47,7 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   display: inline-block;
-  background-image: linear-gradient(
-    to right,
-    $color-primary-light,
-    $color-primary-dark
-  );
-
-  -webkit-background-clip: text;
-  color: transparent;
+  color: $color-primary;
   letter-spacing: 0.2rem;
   transition: all 200ms;
   backface-visibility: hidden;
@@ -70,6 +63,17 @@ body {
   &:hover {
     transform: skewY(2deg) skewX(15deg) scale(1.1);
     text-shadow: 0.5em 1rem 2rem $shadow-2;
+  }
+
+  @supports (background-clip: text) {
+    background-image: linear-gradient(
+      to right,
+      $color-primary-light,
+      $color-primary-dark
+    );
+
+    -webkit-background-clip: text;
+    color: transparent;
   }
 }
 

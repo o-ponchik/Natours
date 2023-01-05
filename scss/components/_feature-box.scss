@@ -13,17 +13,20 @@
     font-size: 6rem;
     margin-bottom: 0.5rem;
     font-weight: 200;
-    background-image: linear-gradient(
-      to right,
-      $color-primary-light,
-      $color-primary-dark
-    );
-
-    -webkit-background-clip: text;
-    color: transparent;
+    color: $color-primary;
 
     @include respond(tab-port) {
       margin-bottom: 0rem;
+    }
+
+    @supports (background-clip: text) {
+      -webkit-background-clip: text;
+      color: transparent;
+      background-image: linear-gradient(
+        to right,
+        $color-primary-light,
+        $color-primary-dark
+      );
     }
   }
 

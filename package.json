@@ -1,0 +1,7 @@
+{
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "gulp-postcss": "^9.0.1",
+    "postcss": "^8.4.20"
+  }
+}
